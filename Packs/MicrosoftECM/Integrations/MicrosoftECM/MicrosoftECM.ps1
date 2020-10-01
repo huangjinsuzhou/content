@@ -308,7 +308,7 @@ Function ParseScriptInvocationResults()
 {
 	[Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingPositionalParameters", "")]
 	param(
-		[Parameter()] [string]$result,
+		[Parameter()] [PSCustomObject]$result,
 		[Parameter()] [string]$HumanReadableTitle
 	)
 	if ($result)
